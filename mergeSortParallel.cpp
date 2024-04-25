@@ -80,13 +80,19 @@ for(int i=0;i<n;i++){
     cin>>arr[i];
 }
 
+double start_time,finish_time,execution_time;
+start_time = omp_get_wtime();
+
 mergeSort(arr,0,n-1);
 
+finish_time=omp_get_wtime();
 cout<<"sorted vector ->"<<endl;
 
-for(int i=0;i<n;i++){
-    cout<<arr[i]<<endl;
+for(int i=0;i<n;i++){   
+    cout<<arr[i]<<" ";
 }
 
+execution_time=finish_time-start_time;
+cout<<"\nexecution time of merge sort in parallel "<<execution_time<<"s"<<endl;
     return 0;
 }
