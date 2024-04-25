@@ -14,6 +14,12 @@ CUDA on linux--------------------->
 
          nvcc program_name.cu -o binary_name.out && ./binary_name.out
 
+OR
+
+         nvcc programName.cu - o programName
+         ./programName or programName
+
+
 CUDA on colab------------------------>
 
 click on runtime > change runtime type > Hardware accelerator > select > T4 GPU
