@@ -22,6 +22,7 @@ https://harshityadav95.medium.com/how-to-run-cuda-c-or-c-on-google-colab-or-azur
 OR
 
 click on runtime > change runtime type > Hardware accelerator > select > T4 GPU
+
 !nvcc --version
 
 !pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
@@ -29,5 +30,6 @@ click on runtime > change runtime type > Hardware accelerator > select > T4 GPU
 %load_ext nvcc_plugin
 
 %%cuda 
+
 //ur code here
 
