@@ -84,3 +84,7 @@ cudaMemcpyHost(C);
 
     return 0;
 }
+
+
+// nvcc programName.cu - o programName
+// ./programName or programName
