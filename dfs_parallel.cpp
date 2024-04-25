@@ -25,15 +25,14 @@ void DFS(int node){
         }
 
         #pragma omp parallel for
-        // {
             for(int i=0;i<graph[current_node].size();i++)
             {
                 int adj_node =graph[current_node][i];
+                #pragma omp critical
                 if(!visited[adj_node]){
                     s.push(adj_node);
                 }
             }
-        // }
     }
 }
 
