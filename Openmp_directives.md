@@ -22,7 +22,23 @@
 
 ### open mp functions 
 omp_set_num_threads 	Sets the number of threads in upcoming parallel regions, unless overridden by a num_threads clause.
+
 omp_get_num_threads 	Returns the number of threads in the parallel region.
-omp_get_max_threads 	Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without num_threads were defined at that point in the code.
+
+omp_get_max_threads 	Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without 
+
+num_threads were defined at that point in the code.
+
 omp_get_thread_num 	Returns the thread number of the thread executing within its thread team.
 
+omp_get_num_procs 	Returns the number of processors that are available when the function is called.
+
+omp_in_parallel 	Returns nonzero if called from within a parallel region.
+
+omp_set_dynamic 	Indicates that the number of threads available in upcoming parallel regions can be adjusted by the run time.
+
+omp_get_dynamic 	Returns a value that indicates if the number of threads available in upcoming parallel regions can be adjusted by the run time.
+
+omp_set_nested 	Enables nested parallelism.
+
+omp_get_nested 	Returns a value that indicates if nested parallelism is enabled.
