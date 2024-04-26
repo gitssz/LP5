@@ -6,7 +6,7 @@
 
 3. **`#pragma omp sections`**: Divides the following code block into sections to be executed by different threads in parallel.
 
-4. **`#pragma omp single`**: Specifies a block of code to be executed by only one thread.
+4. **`#pragma omp single`**: Specifies a block of code to be executed by only one thread. The single directive specifies that a block of code should be executed by only one thread.
 
 5. **`#pragma omp master`**: Specifies a block of code to be executed only by the master thread.
 
